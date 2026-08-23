@@ -45,7 +45,10 @@ nav a:hover { color: var(--teal); }
 .menu-toggle { display: none; }
 main, footer { max-width: var(--max); margin: auto; }
 .hero { display: grid; grid-template-columns: minmax(280px, .8fr) minmax(420px, 1.2fr); align-items: center; gap: clamp(42px, 7vw, 90px); padding: 68px 9% 90px; }
-.hero-portrait { width: min(100%, 350px); justify-self: end; }
+.hero-portrait { position: relative; width: min(100%, 350px); justify-self: end; overflow: hidden; padding: 22px; background: var(--wash); }
+.hero-portrait::before { content: ""; position: absolute; inset: -34px; background: url("assets/somayeh-dana-photo.jpg") center / cover no-repeat; filter: blur(24px); opacity: .72; transform: scale(1.12); }
+.hero-copy { grid-column: 1; grid-row: 1; }
+.hero-portrait { grid-column: 2; grid-row: 1; }
 .eyebrow { color: var(--teal); font-size: .76rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
 h1 { max-width: 790px; margin: 18px 0 18px; font-size: clamp(2.4rem, 4.2vw, 3.8rem); line-height: 1.04; letter-spacing: -.045em; }
 h1 span { color: var(--muted); font-size: .76em; font-weight: 600; }
@@ -64,6 +67,8 @@ h1 span { color: var(--muted); font-size: .76em; font-weight: 600; }
 .primary:hover { background: var(--teal-dark); }
 .secondary { border: 1px solid var(--line); background: var(--white); }
 .profile-photo {
+  position: relative;
+  z-index: 1;
   width: 100%;
   aspect-ratio: 1 / 1;
   display: block;
@@ -106,6 +111,8 @@ h1 span { color: var(--muted); font-size: .76em; font-weight: 600; }
 .publication-list span { color: var(--teal); font-weight: 700; }
 .publication-list p { margin: 0; }
 .publication-list strong { display: block; margin-bottom: 4px; font-family: "Manrope", sans-serif; }
+.publication-link { display: inline-block; margin-top: 7px; color: var(--teal); font-size: .82rem; font-weight: 700; text-decoration: none; }
+.publication-link:hover { color: var(--teal-dark); text-decoration: underline; text-underline-offset: 4px; }
 .timeline article { display: grid; grid-template-columns: 125px 1fr; padding: 25px 0; border-top: 1px solid var(--line); }
 .timeline time { color: var(--teal); font-weight: 700; }
 .timeline h3 { margin: 0 0 5px; }
@@ -127,7 +134,8 @@ footer { display: flex; justify-content: space-between; padding: 25px 34px 45px;
   nav a { padding: 11px; }
   nav a + a { padding-left: 11px; border-left: 0; border-top: 1px solid var(--line); }
   .hero { min-height: 0; grid-template-columns: 1fr; padding: 70px 22px; }
-  .hero-portrait { width: min(82vw, 340px); justify-self: start; }
+  .hero-copy { grid-column: 1; grid-row: 1; }
+  .hero-portrait { grid-column: 1; grid-row: 2; width: min(82vw, 340px); justify-self: start; }
   .hero-introduction { grid-column: auto; padding: 0; }
   .section-grid { grid-template-columns: 1fr; gap: 18px; padding: 75px 22px; }
   .section-label { padding: 0; }
