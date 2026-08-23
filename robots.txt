@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://somayehdana.github.io/sitemap.xml
