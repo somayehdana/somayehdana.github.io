@@ -45,8 +45,7 @@ nav a:hover { color: var(--teal); }
 .menu-toggle { display: none; }
 main, footer { max-width: var(--max); margin: auto; }
 .hero { display: grid; grid-template-columns: minmax(280px, .8fr) minmax(420px, 1.2fr); align-items: center; gap: clamp(42px, 7vw, 90px); padding: 68px 9% 90px; }
-.hero-portrait { position: relative; width: min(100%, 350px); justify-self: end; overflow: hidden; padding: 22px; background: var(--wash); }
-.hero-portrait::before { content: ""; position: absolute; inset: -34px; background: url("assets/somayeh-dana-photo.jpg") center / cover no-repeat; filter: blur(24px); opacity: .72; transform: scale(1.12); }
+.hero-portrait { position: relative; width: min(100%, 350px); justify-self: end; }
 .hero-copy { grid-column: 1; grid-row: 1; }
 .hero-portrait { grid-column: 2; grid-row: 1; }
 .eyebrow { color: var(--teal); font-size: .76rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
