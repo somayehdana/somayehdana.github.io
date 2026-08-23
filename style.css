@@ -79,7 +79,7 @@ h1 span { color: var(--muted); font-size: .76em; font-weight: 600; }
 .metrics dd { margin: 3px 0 0; color: var(--muted); font-size: .83rem; }
 .section-grid { display: grid; grid-template-columns: 190px 1fr; gap: 48px; padding: 105px 34px; border-top: 1px solid var(--line); }
 .section-label { padding-top: 9px; color: var(--teal); font-size: .74rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
-.section-content > h2, .section-heading h2 { margin: 0 0 25px; font-size: clamp(1.8rem, 3vw, 2.8rem); line-height: 1.18; letter-spacing: -.035em; }
+.section-content > h2, .section-heading h2 { margin: 0 0 25px; font-size: clamp(1.55rem, 2.4vw, 2.25rem); line-height: 1.2; letter-spacing: -.03em; }
 .section-content > p { max-width: 790px; color: var(--muted); font-size: 1.08rem; }
 .tinted { background: var(--wash); }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 38px; }
